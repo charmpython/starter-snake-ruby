@@ -25,9 +25,9 @@ post '/start' do
   content_type :json
   
   appearance = {
-    color: "#888888",
-    head_type: "regular",
-    tail_type: "regular",
+    color: "#A67FE2",
+    head_type: "fang",
+    tail_type: "hook",
   }
 
   camelcase(appearance).to_json
