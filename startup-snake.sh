@@ -1,5 +1,6 @@
 #!/bin/bash
 THIS_DIR=$(dirname $0)
+
 if [[ $1 == "-h" || $1 == "--help" ]]; then
     echo "Usage: $(basename $0)"
     echo "  Start the BattleSnake server in the current directory."
@@ -12,4 +13,4 @@ if [[ ! -f ${THIS_SERVER} ]]; then
     echo "Make sure you've deployed your snake server." >&2
     exit 1
 fi
-ruby ${THIS_SERVER} 
+bundle exec ruby ${THIS_SERVER}

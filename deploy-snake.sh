@@ -7,7 +7,7 @@ SNAKE_NAME=$1
 # These are the default files we use, if you add more, you'll need
 # to extend this script to scp more files accross.
 THIS_SERVER=${THIS_DIR}/app
-THIS_START=${THIS_DIR}/start-server.sh
+THIS_START=${THIS_DIR}/startup-snake.sh
 THIS_GEMFILE=${THIS_DIR}/Gemfile
 if [[ $1 == "-h" || $1 == "--help" ]]; then
     echo "Usage: $(basename $0) name_of_snake"
